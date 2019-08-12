@@ -1,0 +1,41 @@
+<template>
+<script type="text/javascript">
+// Random slogans on wallet welcome page
+	var textarray = [
+        "Bigger. Better. Catalyst.",
+        "The Catalyst of your Life.",
+        "Catalyst building a better tomorrow.",
+		"We Don't Make Catalyst. We Make Catalyst Better."
+	];
+
+	function RndText() {
+		var rannum= Math.floor(Math.random()*textarray.length);
+		document.getElementById('ShowText').innerHTML=textarray[rannum];
+	}
+	onload = function() { RndText(); }
+</script>
+    <section class="section" id="section-welcome">
+        <div class="section-contents">
+            <div class="div-welcome-top">
+                <h2 class="welcome-intro-title">Welcome!</h2>
+                <div id="ShowText"></div>
+				<p class="welcome-intro">
+                    Get started by creating a new wallet,<br> open or import your existing wallet.
+                </p>
+            </div>
+            <div class="dev-welcome-bottom">
+                <div class="welcome-buttons">
+                    <button tabindex="0" type="button" class="form-bt button-green" data-section="section-overview-load" id="button-welcome-openwallet" title="Open your existing wallet file (ctrl+o)">Open wallet</button>
+                    <button tabindex="0" type="button" class="form-bt button-green" data-section="section-overview-create" id="button-welcome-createwallet"  title="Create new a wallet file (ctrl+n)">Create New Wallet</button>
+                </div>
+                <div class="welcome-buttons">
+                    <button tabindex="0" type="button" class="form-bt button-green" data-section="section-overview-import-key" id="button-welcome-import-key" title="Import/restore your private keys (ctrl+i)">Import key</button>
+                    <button tabindex="0" type="button" class="form-bt button-green" data-section="section-overview-import-seed" id="button-welcome-import-seed"  title="Import/restore your mnemonic seed (ctrl+shift+i)">Import mnemonic seed</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</template>
