@@ -58,7 +58,7 @@ Program File are situated %USERPROFILE%\AppData\Local\Programs\catalyst-gui-wall
 
 See: https://docs.appimage.org/user-guide/run-appimages.html
 
-Build
+### Build from source
 
 You need to have Node.js and npm installed, go to https://nodejs.org and find out how to get it installed on your platform.
 
