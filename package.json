@@ -1,8 +1,8 @@
 {
-  "name": "catalyst-gui-wallet",
-  "productName": "catalyst-gui-wallet",
+  "name": "CatalystLedger",
+  "productName": "CatalystLedger",
   "description": "Catalyst GUI Wallet",
-  "version": "v1.1.6",
+  "version": "v2.0.0",
   "homepage": "https://dirtybits.github.io/",
   "repository": "https://github.com/catalystdevelopment/catalyst-gui-wallet",
   "main": "main.js",
@@ -15,7 +15,7 @@
     "dist-mac": "./node_modules/.bin/electron-builder --x64 --mac -c.extraResources=./bin/osx/catalyst-service"
   },
   "keywords": [],
-  "author": "TurtleCoin Developers, Catalyst Developers",
+  "author": "TurtleCoin Developers, (n8tb1t, dirtybits) Catalyst Developers",
   "license": "ISC",
   "devDependencies": {
     "devtron": "^1.4.0",
@@ -37,8 +37,8 @@
     "request-promise-native": "^1.0.7"
   },
   "build": {
-    "appId": "Catalyst",
-    "copyright": "Copyright (c) 2018 TurtleCoin Developers, 2019 Catalyst Developers",
+    "appId": "CatalystLedger",
+    "copyright": "Copyright (c) 2018 TurtleCoin Developers, 2019 (n8tb1t, dirtybits) Catalyst Developers",
     "directories": {
       "output": "dist",
       "buildResources": "build"
@@ -68,7 +68,7 @@
       "target": [
         "AppImage"
       ],
-      "maintainer": "Sups (@Sudosups), MadHatter (@MadHatter)",
+      "maintainer": "n8tb1t (@n8tb1t), dirtybits (@dirtybits)",
       "category": "Office",
       "vendor": "Catalyst",
       "synopsis": "Catalyst GUI Wallet"
