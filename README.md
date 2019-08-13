@@ -1,5 +1,7 @@
 # Catalyst GUI Wallet
-
+ 
+> After you start the wallet for the first time, please **refresh the node list**, and then select one of the public nodes.
+the `wallet.cx-pool.gq` is our official node, the transaction fee is 10CX, the fee will be used for development porpuses and various community events.
 ### Features:
 This wallet contains the basic functions required to manage your Catalyst assets:
 
@@ -40,10 +42,10 @@ The wallet relies on `catalyst-service` to manage wallet container &amp; rpc com
 On first launch, Catalyst WalletShell will try to detect location/path of bundled `catalyst-service` binary,
 but if it's failed, you can manually set path to the `catalyst-service` binary on the Settings screen.
 
-In windows configuration files are found in directory %USERPROFILE%\AppData\Roaming\catalyst-gui-wallet ,
+In windows configuration files are found in directory %USERPROFILE%\AppData\Roaming\CatalystLedger ,
 on issues it helps to delete it and restart the wallet.
 
-Program File are situated %USERPROFILE%\AppData\Local\Programs\catalyst-gui-wallet
+Program File are situated %USERPROFILE%\AppData\Local\Programs\CatalystLedger
 
 ### Download & Run Catalyst Wallet
 
@@ -51,10 +53,8 @@ Program File are situated %USERPROFILE%\AppData\Local\Programs\catalyst-gui-wall
 #### GNU/Linux (AppImage):
 1. Download latest AppImage bundle here: https://github.com/catalystdevelopment/catalyst-gui-wallet/releases/latest
 2. Make it executable, either via GUI file manager or command line, e.g. `chmod +x catalyst-wallet-<version>-linux.AppImage`
-3. Run ./catalystd by locating the app in your Catalyst directory and double clicking, then Run the `wallet` file by double clicking the app
-4. To use own blockchain the Daemon or public node address needs setting as 127.0.0.1 and Daemon/node port set as 17291
-   To use a public node visit the main website to see a list of available nodes.
-
+4. To use your local dameon the set the public node address to 127.0.0.1 and Daemon/node port to 17291.
+   To use a public node visit the main website to see the list of available nodes.
 
 See: https://docs.appimage.org/user-guide/run-appimages.html
 
@@ -75,12 +75,6 @@ $ cd catalyst-gui-wallet
 
 ### install dependencies
 $ npm install
-
-### create build+dist directory
-$ mkdir -p ./build && mkdir -p ./dist
-
-### copy/symlink icons from assets, required for packaging
-$ cp ./src/assets/icon.* ./build/
 
 ### build GNU/Linux package
 $ mkdir -p ./bin/lin

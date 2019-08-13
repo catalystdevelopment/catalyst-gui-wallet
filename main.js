@@ -35,7 +35,7 @@ const DEFAULT_SETTINGS = {
     node_address: DEFAULT_REMOTE_NODE,
     pubnodes_last_updated: 946697799000,
     pubnodes_data: config.remoteNodeListFallback,
-    pubnodes_custom: ['127.0.0.1:17122'],
+    pubnodes_custom: ['127.0.0.1:17291'],
     pubnodes_exclude_offline: false,
     tray_minimize: false,
     tray_close: false,
@@ -56,7 +56,7 @@ app.setAppUserModelId(config.appId);
 log.transports.console.level = LOG_LEVEL;
 log.transports.file.level = LOG_LEVEL;
 log.transports.file.maxSize = 5 * 1024 * 1024;
-log.info(`Starting WalletShell ${WALLETSHELL_VERSION}`);
+log.info(`Starting Catalyst Wallet ${WALLETSHELL_VERSION}`);
 if (IS_DEV || IS_DEBUG) log.warn(`Running in ${IS_DEV ? 'dev' : 'debug'} mode`);
 
 let trayIcon = path.join(__dirname, 'src/assets/tray.png');

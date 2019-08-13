@@ -1,10 +1,9 @@
 var config = {};
-//Rebase File
-// self explanatory, your application name, descriptions, etc
-config.appName = 'catalyst-gui-wallet';
-config.appDescription = 'Catalyst GUI Wallet';
+
+config.appName = 'CatalystLedger';
+config.appDescription = 'Catalyst Wallet';
 config.appSlogan = 'Catalyst building a better tomorrow.!';
-config.appId = 'catalyst-gui-wallet';
+config.appId = 'CatalystLedger';
 config.appGitRepo = 'https://github.com/catalystdevelopment/catalyst-gui-wallet';
 
 // default port number for your daemon (e.g. Catalyst daemon)
@@ -24,29 +23,25 @@ config.walletServiceBinaryVersion = "v0.3.1.1";
 // json --> for turtle service (or its forks) version >= v0.8.4
 config.walletServiceConfigFormat = "json";
 
-// default port number for your wallet service (e.g. turtle-service)
+// default port number for your wallet service (e.g. catalyst-service)
 config.walletServiceRpcPort = 17280;
 
 // block explorer url, the [[TX_HASH]] will be substituted w/ actual transaction hash
-config.blockExplorerUrl = 'https://www.cx-explorer.gq/?hash=[[TX_HASH]]#blockchain_transaction';
+config.blockExplorerUrl = 'https://www.cx-explorer.gq/index.html?hash=[[TX_HASH]]#blockchain_transaction';
 
 // default remote node to connect to, set this to a known reliable node for 'just works' user experience
-config.remoteNodeDefaultHost = 'pool.cx-pool.gq';
+config.remoteNodeDefaultHost = 'wallet.cx-pool.gq';
 
 
 // remote node list update url, set to null if you don't have one
-// for TRTL:
-// raw list: https://raw.githubusercontent.com/turtlecoin/turtlecoin-nodes-json/master/turtlecoin-nodes.json
-// filtered: https://trtl.nodes.pub/api/getNodes
-config.remoteNodeListUpdateUrl = 'https://raw.githubusercontent.com/catalystdevelopment/catalyst-gui-wallet/master/catalyst-nodes.json';
-// config.remoteNodeListUpdateUrl = null; //disables autoupdate
+config.remoteNodeListUpdateUrl = 'https://raw.githubusercontent.com/catalystdevelopment/catalyst-nodes-json/master/catalyst-nodes.json';
 
 // set to false if using raw/unfiltered node list
 config.remoteNodeListFiltered = false;
 
 // fallback remote node list, in case fetching update failed, fill this with known to works remote nodes
 config.remoteNodeListFallback = [
-  'pool.cx-pool.gq:17291',
+  'wallet.cx-pool.gq:17291',
   '127.0.0.1:17291'
 ];
 
@@ -84,8 +79,13 @@ config.addressBookObfuscationKey = '79009fb00ca1b7130832a42de45142cf6c4b7f333fe6
 // initial/sample entries to fill new address book
 config.addressBookSampleEntries = [
   {
-    name: 'Catalyst Developers Funds',
+    name: 'Catalyst Developers Funds [n8tb1t]',
     address: 'cat18x93ufCQWaX4f8f2c2fZ8Ku2A4VTcgEoSpweiDbgEBF9i7YA2XGX1dSR7UbguQU5UKYEXyjfaTfnJBmRhHju26n8Y9AAFx',
+    paymentId: '',
+  },
+  {
+    name: 'Catalyst Developers Funds [dirtybits]',
+    address: 'cat1Az2Xwt4byGrYeiKwxacV2pMahz7JaFPqW7eLbFPDP9kKT4rYMMq428KsZMbv8xK44j3dKBvaZW1VGzX4WVvb4R8ndN6WnD',
     paymentId: '',
   }
 ];
