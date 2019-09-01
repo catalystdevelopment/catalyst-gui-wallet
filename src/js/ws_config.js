@@ -30,7 +30,7 @@ config.walletServiceRpcPort = 17280;
 config.blockExplorerUrl = 'https://www.cx-explorer.gq/index.html?hash=[[TX_HASH]]#blockchain_transaction';
 
 // default remote node to connect to, set this to a known reliable node for 'just works' user experience
-config.remoteNodeDefaultHost = 'wallet.cx-pool.gq';
+config.remoteNodeDefaultHost = 'zeta.cryptocatalyst.net';
 
 
 // remote node list update url, set to null if you don't have one
@@ -41,7 +41,7 @@ config.remoteNodeListFiltered = false;
 
 // fallback remote node list, in case fetching update failed, fill this with known to works remote nodes
 config.remoteNodeListFallback = [
-  'wallet.cx-pool.gq:17291',
+  'zeta.cryptocatalyst.net:17291',
   '127.0.0.1:17291'
 ];
 
